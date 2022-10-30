@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom Nav</title>
+    <script src="https://kit.fontawesome.com/9f8ac9249a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+    <div id="pages" class="pages">
+        <div id="profile" class="page">p
+
+        </div>
+
+        <div id="home" class="page">h
+
+        </div>
+
+        <div id="message" class="page">m
+
+        </div>
+
+        <div id="settings" class="page">s
+
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li id="1" class="active"><a href="#">
+                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                <span class="text">Profile</span></a>
+            </li>
+            <li id="2"><a href="#">
+                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                <span class="text">Home</span></a>
+            </li>
+            <li id="3"><a href="#">
+                <span class="icon"><i class="fa-solid fa-message"></i></span>
+                <span class="text">Messages</span></a>
+            </li>
+            <li id="4"><a href="#">
+                <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                <span class="text">Settings</span>
+            </a></li>
+            <div class="indicator"></div>
+        </ul>
+    </nav>
+
+<script>
+
+const list = document.querySelectorAll("nav li");
+
+function activeLink(){
+    list.forEach((item) => {
+        item.classList.remove("active");
+    })
+    this.classList.add("active");
+    document.querySelectorAll(".page").forEach((item) =>{
+        if(this.id==1) item.style.transform = `translateX(0)`;
+        else item.style.transform = `translateX(-${this.id-1}00%)`;
+    })
+
+}
+
+list.forEach((item) => {
+    item.addEventListener("click", activeLink);
+})
+
+
+</script>
+
+
+</body>
+</html>
