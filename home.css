@@ -1,0 +1,179 @@
+#home h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lettre{
+    width: 100px;
+    height: 160px;
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+    border: 1px solid transparent;
+}
+
+.part{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: var(--v);
+    display: none;
+    position: absolute;
+    transition: 0.7s ease-out;
+}
+
+
+
+.e .top, .t .top {
+    width: 100px;
+}
+
+.i .top{
+    left: 40px;
+}
+
+
+.part, .top{
+    display: block;
+}
+
+.vertical-bar{
+    height: 160px;
+}
+
+.small-vertical-bar{
+    height: 100px;
+    top: 30px;
+}
+
+.i .small-vertical-bar{
+    top: 40px;
+    height: 120px;
+}
+
+.t .small-vertical-bar{
+    top: 30px;
+    height: 130px;
+}
+
+.bottom-bar{
+    width: 100px;
+    bottom: 0;
+}
+
+.middle-bar{
+    width: 40px;
+    top: 70px;
+    left: 30px;
+}
+
+.middle{
+    left: 40px;
+}
+
+.right{
+    right: 0;
+}
+
+.diagonal-bar{
+    height: 100px;
+    transform: rotate(-20deg);
+    left: 40px;
+    top: 30px;
+}
+
+.left{
+    left: 0;
+}
+
+
+
+/*break animation*/
+
+.lettre .left{
+    transform:  translate(-142px, 849px) rotate(84deg);
+}
+.lettre .right{
+    transform: translate(347px, 465px) rotate(84deg);
+}
+
+.e .left{
+    transform: translate(-443px, -954px) rotate(84deg) ;
+}
+
+.t .top{
+    transform: translate(-385px, -586px) rotate(-20deg) ;
+}
+
+
+.i .middle{
+    transform: translate(206px, 695px) rotate(184deg) ;
+}
+.n .left{
+    transform:  translate(-796px, -489px) rotate(84deg);
+}
+
+#home h1:nth-child(4) .left{
+    transform: translate(-485px, 736px) rotate(84deg);
+}
+
+
+
+.e .top{
+    transform:  translate(142px, -849px) rotate(84deg);
+}
+.i .top{
+    transform:  translate(504px, -959px) rotate(84deg);
+}
+.n .top{
+    transform:  translate(554px, -559px) rotate(84deg);
+}
+
+.t .small-vertical-bar{
+    transform: translate(247px, 865px) rotate(124deg);
+}
+
+.e .middle-bar{
+    transform: translate(443px, 954px) rotate(84deg) ;
+}
+
+.e .bottom-bar{
+    transform: translate(-185px, 586px) rotate(-20deg) ;
+}
+
+
+.n .diagonal-bar{
+    transform: translate(-446px, 495px) rotate(84deg) ;
+}
+.n .left{
+    transform:  translate(-796px, -489px) rotate(84deg);
+}
+/* 
+#home h1 .vertical-bar{
+    transform: translate(485px, -736px) rotate(84deg);
+} */
+
+
+.part.fixed{
+    transform: none;
+}
+
+.fixed.diagonal-bar{
+    transform: rotate(-20deg);
+}
+
+.lettre:hover{
+    border: 1px solid var(--v);
+}
+
+.lettre:nth-child(5) {
+    transform: rotate(180deg);
+}
+
+.lettre:nth-child(4) {
+    transform: scaleY(-1);
+}

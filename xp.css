@@ -1,0 +1,11 @@
+#experience h1{
+    position: absolute;
+    left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 100px;
+    background-color: var(--v2);
+    text-align: center;
+    padding: 50px;
+    height: 100%;
+}
