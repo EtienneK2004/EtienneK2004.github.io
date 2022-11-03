@@ -8,4 +8,52 @@
     text-align: center;
     padding: 50px;
     height: 100%;
+    width: 15%;
+}
+
+#experience article{
+    height: 500px;
+    border-style: solid;
+    border-color: var(--v);
+    border-width: 10px;
+    border-radius: 30px;
+    padding: 30px;
+    width: 81%;
+    margin: 0 2%;
+    background-color: whitesmoke; 
+}
+
+.articles-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 600px;
+    top: 155px;
+    transition: 0.5s;
+}
+
+#experience h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+#experience .button {
+    position: absolute;
+    left: 55%;
+    font-size: 60px;
+    opacity: 0.6;
+    color: var(--v);
+}
+
+.fa-chevron-up{
+    top: 30px;
+}
+
+.fa-chevron-down{
+    bottom: 100px;
+}
+
+#experience .button:hover{
+    opacity: 1;
 }

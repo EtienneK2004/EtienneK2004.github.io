@@ -21,7 +21,7 @@
     width: 20px;
     border-radius: 10px;
     background-color: var(--v);
-    display: none;
+    opacity: 0;
     position: absolute;
     transition: 0.7s ease-out;
 }
@@ -37,9 +37,7 @@
 }
 
 
-.part, .top{
-    display: block;
-}
+
 
 .vertical-bar{
     height: 160px;
@@ -160,6 +158,7 @@
 
 .part.fixed{
     transform: none;
+    opacity: 1;
 }
 
 .fixed.diagonal-bar{
