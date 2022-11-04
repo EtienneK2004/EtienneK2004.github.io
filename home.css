@@ -5,6 +5,15 @@
 
 }
 
+#show-all{
+    height: 60px;
+    padding: 6px;
+    border-radius: 3px;
+    font-size: 30px;
+    margin-top: 60px;
+
+}
+
 .lettre{
     width: 100px;
     height: 160px;
@@ -25,6 +34,11 @@
     position: absolute;
     transition: 0.7s ease-out;
 }
+/*
+.lettre:not(.fixed):hover{
+    animation: shake 0.7s infinite;
+}*/
+
 
 
 
@@ -104,12 +118,12 @@
 }
 
 .t .top{
-    transform: translate(-385px, -586px) rotate(-20deg) ;
+    transform: translate(-385px, -886px) rotate(-180deg) ;
 }
 
 
 .i .middle{
-    transform: translate(206px, 695px) rotate(184deg) ;
+    transform: translate(204px, 695px) rotate(284deg) ;
 }
 .n .left{
     transform:  translate(-796px, -489px) rotate(84deg);
@@ -125,18 +139,18 @@
     transform:  translate(142px, -849px) rotate(84deg);
 }
 .i .top{
-    transform:  translate(504px, -959px) rotate(84deg);
+    transform:  translate(50px, -959px) rotate(84deg);
 }
 .n .top{
     transform:  translate(554px, -559px) rotate(84deg);
 }
 
 .t .small-vertical-bar{
-    transform: translate(247px, 865px) rotate(124deg);
+    transform: translate(-247px, 865px) rotate(-124deg);
 }
 
 .e .middle-bar{
-    transform: translate(443px, 954px) rotate(84deg) ;
+    transform: translate(443px, 254px) rotate(84deg) ;
 }
 
 .e .bottom-bar{
@@ -165,8 +179,8 @@
     transform: rotate(-20deg);
 }
 
-.lettre:hover{
-    border: 1px solid var(--v);
+.lettre:not(.fixed):hover{
+    border-color: var(--v);
 }
 
 .lettre:nth-child(5) {

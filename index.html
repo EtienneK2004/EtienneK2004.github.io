@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="xp.css">
+    <link rel="stylesheet" href="keyframes.css">
 </head>
 <body>
     
@@ -75,6 +76,7 @@
                 </div>
             </div>
         </h1>
+        <button id="show-all">Show All</button>
         </div>
 
         <div id="experience" class="second page">
@@ -152,13 +154,20 @@ list.forEach((item) => {
 });
 
 document.querySelectorAll(".lettre").forEach((item) => {
+    
     item.addEventListener("click", () => {
-        item.querySelectorAll(".part").forEach((part) => {
-            if(part.classList.contains("fixed"))
+        if(item.classList.contains("fixed")){
+            item.classList.remove("fixed");
+            item.querySelectorAll(".part").forEach((part) => {
                 part.classList.remove("fixed");
-            else
+            });
+        }
+        else{
+            item.classList.add("fixed");
+            item.querySelectorAll(".part").forEach((part) => {
                 part.classList.add("fixed");
-        })
+            });
+        }
         
     })
 });
@@ -182,6 +191,15 @@ function xpUp(){
         document.querySelector(".articles-container").style.transform = `none`;
     }
 }
+
+document.getElementById("show-all").onclick = () => {
+    let i = 0;
+    document.querySelectorAll(".part").forEach((part) => {
+            if(part.classList.contains("fixed")) return;
+            setTimeout(()=>{part.classList.add("fixed");}, 50*i);
+            i++;
+        })
+};
 
 </script>
 
