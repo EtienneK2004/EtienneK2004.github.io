@@ -64,7 +64,7 @@
             <div class="part diagonal-bar"></div>
                 <div class="part vertical-bar right"></div>
                 
-            <div class="part vertical-bar left"></div>
+            <div class="part vertical-bar left"></div> 
             </div>
             <div class="lettre e">
                 <div class="top part"></div>
@@ -96,7 +96,7 @@
                     <h2 class="lang" id="title-stage0">AirFrance Internship 0</h2>
                 </article>
             </div>
-            <i class="fa-solid fa-chevron-up button"></i>
+            <i class="fa-solid fa-chevron-up button" style="display: none"></i>
             <i class="fa-solid fa-chevron-down button"></i>
             
         </div>
@@ -177,26 +177,31 @@ document.querySelector(".fa-chevron-up").onclick = xpUp;
 
 function xpDown(){
     activeXP++;
-    document.querySelector(".fa-chevron-up").onclick = xpUp;
-    if(activeXP == nbXP-1) document.querySelector(".fa-chevron-down").onclick = "";
+    document.querySelector(".fa-chevron-up").style.display = "block";
+    if(activeXP == nbXP-1) document.querySelector(".fa-chevron-down").style.display = "none";
     document.querySelector(".articles-container").style.transform = `translateY(${-activeXP*1100}px)`
 }
 
 function xpUp(){
     activeXP--;
-    document.querySelector(".fa-chevron-down").onclick = xpDown;
+    document.querySelector(".fa-chevron-down").style.display = "block";
     document.querySelector(".articles-container").style.transform = `translateY(${-activeXP*1100}px)`
     if(activeXP == 0) {
-        document.querySelector(".fa-chevron-up").onclick = "";
+        document.querySelector(".fa-chevron-up").style.display = "none";
         document.querySelector(".articles-container").style.transform = `none`;
     }
 }
 
 document.getElementById("show-all").onclick = () => {
     let i = 0;
-    document.querySelectorAll(".part").forEach((part) => {
-            if(part.classList.contains("fixed")) return;
-            setTimeout(()=>{part.classList.add("fixed");}, 50*i);
+    document.querySelectorAll(".lettre").forEach((lettre) => {
+            if(lettre.classList.contains("fixed")) return;
+            setTimeout(()=>{
+                lettre.classList.add("fixed");
+                lettre.querySelectorAll(".part").forEach((part) => {
+                    part.classList.add("fixed");
+                });
+            }, 50*i);
             i++;
         })
 };
