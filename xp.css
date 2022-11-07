@@ -1,13 +1,19 @@
 
 #experience h1{
     background-color: var(--v2);
+    position: sticky;
+    top: 0;
     text-align: center;
-    padding: 50px;
+    padding: 40px;
+    z-index: 3;
 }
 
-@media screen and (min-width: 600px){
+#experience {
+    display: block;
+}
+
+@media screen and (min-width: 800px){
     #experience h1{
-        position: absolute;
         left: 0;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
@@ -18,26 +24,41 @@
 }
 
 #experience article{
+    position: relative;
     min-height: 500px;
-    border-style: solid;
-    border-color: var(--v);
-    border-width: 10px;
-    border-radius: 30px;
     padding: 30px;
+    padding-top: 120px;
     /* width: 81%; */
-    margin: 0 2%;
-    background-color: whitesmoke; 
+    /* background-color: whitesmoke;  */
+}
+
+#experience article ul{
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#experience ul li{
+    margin: 1em auto;
+}
+
+#experience article.grey {
+    background-color: var(--clr);
+    color: lightgray;
+}
+
+#experience article.purple{
+    background-color: var(--v);
+    color: black;
 }
 
 .articles-container{
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 600px;
-    right: 0;
-    top: 155px;
+    /* gap: 200px; */
+    top: 50px;
     transition: 0.5s;
-    max-width: 450px;
+    width: 100%;
 }
 
 #experience h2{
@@ -64,4 +85,36 @@
 
 #experience .button:hover{
     opacity: 1;
+}
+
+
+
+
+.custom-shape-divider-top-1667855510 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1667855510 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-top-1667855510 .shape-fill {
+    fill: var(--clr);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1667855510 svg {
+        width: calc(100% + 1.3px);
+        height: 59px;
+    }
 }

@@ -44,6 +44,7 @@ nav{
     background: white;
 }
 
+
 nav ul{
     display: flex;
     width: 350px;
@@ -160,7 +161,7 @@ nav ul li:nth-child(4).active ~ .indicator{
 
 .page{
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 100%;
     transition: 0.5s;
     position: absolute;
@@ -182,3 +183,13 @@ nav ul li:nth-child(4).active ~ .indicator{
     right: -300%;
 }
 
+
+
+
+
+@media screen and (max-width: 800px) {
+    .desktop{
+        display: none;
+    }
+
+}

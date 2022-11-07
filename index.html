@@ -20,7 +20,7 @@
 
     <div id="pages" class="pages">
         <div id="home" class="first page">
-        <h1>
+        <h1 class="desktop">
             <div class="lettre e">
                 <div class="top part"></div>
                 <div class="part small-vertical-bar left"></div>
@@ -84,20 +84,35 @@
             
             
             <div class="articles-container">
-                <article>
+                <article class="grey">
                     <h2 class="lang" id="title-stage2">AirFrance Internship 2</h2>
+                    <ul>
+                        <li class="lang" id="p1-stage2">
+                            Date: June 2019
+                        </li>
+                        <li class="lang" id="p2-stage2">
+                            Carried out within a team of developers working on the backend of AirFrance's website,
+                            more specifically handeling html requests for options on a flight and travel agencies.
+                        </li>
+                        <li class="lang" id="p3-stage2">
+                            Learned about: HTML requests, SCRUM methodology, test cases and server perfomances.
+                        </li>
+                        <li class="lang" id="p4-stage2">
+                            Could visit: The developers' premises and control room of AirFrance's servers.
+                        </li>
+                    </ul>
                 </article>
 
-                <article>
+                <article class="purple">
                     <h2 class="lang" id="title-stage1">AirFrance Internship 1</h2>
-                </article>
-
-                <article>
-                    <h2 class="lang" id="title-stage0">AirFrance Internship 0</h2>
+                    <p class="lang"></p>
+                    <div class="custom-shape-divider-top-1667855510">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
                 </article>
             </div>
-            <i class="fa-solid fa-chevron-up button" style="display: none"></i>
-            <i class="fa-solid fa-chevron-down button"></i>
             
         </div>
 
@@ -109,27 +124,28 @@
 
         </div>
     </div>
-    <nav>
-        <ul>
-            <li id="1" class="active"><a href="#">
-                <span class="icon"><i class="fa-solid fa-house"></i></span>
-                <span id="nav-home" class="text lang"><b>Home</b></span></a>
-            </li>
-            <li id="2"><a href="#">
-                <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
-                <span id="nav-experience" class="text lang"><b>Experience</b></span></a>
-            </li>
-            <li id="3"><a href="#">
-                <span class="icon"><i class="fa-solid fa-message"></i></span>
-                <span id="nav-message" class="text lang"><b>Messages</b></span></a>
-            </li>
-            <li id="4"><a href="#">
-                <span class="icon"><i class="fa-solid fa-gear"></i></span>
-                <span id="nav-settings" class="text lang"><b>Settings</b></span>
-            </a></li>
-            <div class="indicator"></div>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li id="1" class="active"><a href="#">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span id="nav-home" class="text lang"><b>Home</b></span></a>
+                </li>
+                <li id="2"><a href="#">
+                    <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                    <span id="nav-experience" class="text lang"><b>Experience</b></span></a>
+                </li>
+                <li id="3"><a href="#">
+                    <span class="icon"><i class="fa-solid fa-message"></i></span>
+                    <span id="nav-message" class="text lang"><b>Messages</b></span></a>
+                </li>
+                <li id="4"><a href="#">
+                    <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                    <span id="nav-settings" class="text lang"><b>Settings</b></span>
+                </a></li>
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+
 
 <script>
 
@@ -172,25 +188,7 @@ document.querySelectorAll(".lettre").forEach((item) => {
     })
 });
 
-document.querySelector(".fa-chevron-down").onclick = xpDown;
-document.querySelector(".fa-chevron-up").onclick = xpUp;
 
-function xpDown(){
-    activeXP++;
-    document.querySelector(".fa-chevron-up").style.display = "block";
-    if(activeXP == nbXP-1) document.querySelector(".fa-chevron-down").style.display = "none";
-    document.querySelector(".articles-container").style.transform = `translateY(${-activeXP*1100}px)`
-}
-
-function xpUp(){
-    activeXP--;
-    document.querySelector(".fa-chevron-down").style.display = "block";
-    document.querySelector(".articles-container").style.transform = `translateY(${-activeXP*1100}px)`
-    if(activeXP == 0) {
-        document.querySelector(".fa-chevron-up").style.display = "none";
-        document.querySelector(".articles-container").style.transform = `none`;
-    }
-}
 
 document.getElementById("show-all").onclick = () => {
     let i = 0;
