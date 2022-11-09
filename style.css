@@ -35,7 +35,7 @@ body{
 nav{
     width: 400px;
     height: 75px;
-    position: fixed;
+    position: absolute; /* Fake fixed with js */
     bottom: 0;
     display: flex;
     justify-content: center;

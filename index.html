@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bottom Nav</title>
+    <title>Etienne Kita</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="keyframes.css">
 </head>
 <body>
+
+    <div id="choose-lang">
+        <img class="langage" height="200" width="200" id="fr">
+        <h3>Bienvenue</h3>
+
+        <img class="langage" height="200" width="200" id="en">
+        <h3>Welcome</h3>
+    </div>
     
 
 
@@ -105,7 +113,12 @@
 
                 <article class="purple">
                     <h2 class="lang" id="title-stage1">AirFrance Internship 1</h2>
-                    <p class="lang"></p>
+                    <ul>
+                        <li class="lang" id="p1-stage1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cupiditate. Dolor quod corporis consequatur laudantium commodi obcaecati. Voluptatem optio eveniet magnam ab vitae voluptates.</li>
+                        <li class="lang" id="p2-stage1">Dolorem rem, voluptatibus deleniti cumque sapiente assumenda, nostrum dolores reiciendis consequatur neque at ea distinctio architecto.</li>
+                        <li class="lang" id="p3-stage1">Voluptates reiciendis magni quam molestias vel repudiandae repellendus sapiente hic aliquid quisquam recusandae.</li>
+                        <li class="lang" id="p4-stage1">Itaque, obcaecati laboriosam ipsa quam culpa ipsam totam. Perspiciatis ipsam, velit magnam nesciunt reprehenderit.</li>
+                    </ul>
                     <div class="custom-shape-divider-top-1667855510">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
@@ -116,35 +129,35 @@
             
         </div>
 
-        <div id="message" class="third page">
+        <div id="hobby" class="third page">
 
         </div>
 
-        <div id="settings" class="fourth page">
+        <div id="project" class="fourth page">
 
         </div>
     </div>
-        <nav>
-            <ul>
-                <li id="1" class="active"><a href="#">
-                    <span class="icon"><i class="fa-solid fa-house"></i></span>
-                    <span id="nav-home" class="text lang"><b>Home</b></span></a>
-                </li>
-                <li id="2"><a href="#">
-                    <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
-                    <span id="nav-experience" class="text lang"><b>Experience</b></span></a>
-                </li>
-                <li id="3"><a href="#">
-                    <span class="icon"><i class="fa-solid fa-message"></i></span>
-                    <span id="nav-message" class="text lang"><b>Messages</b></span></a>
-                </li>
-                <li id="4"><a href="#">
-                    <span class="icon"><i class="fa-solid fa-gear"></i></span>
-                    <span id="nav-settings" class="text lang"><b>Settings</b></span>
-                </a></li>
-                <div class="indicator"></div>
-            </ul>
-        </nav>
+    <nav id="nav">
+        <ul>
+            <li id="1" class="active"><a href="#">
+                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                <span id="nav-home" class="text lang"><b>Home</b></span></a>
+            </li>
+            <li id="2"><a href="#">
+                <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                <span id="nav-experience" class="text lang"><b>Experience</b></span></a>
+            </li>
+            <li id="3"><a href="#">
+                <span class="icon"><i class="fa-solid fa-music"></i></span>
+                <span id="nav-hobby" class="text lang"><b>Hobbys</b></span></a>
+            </li>
+            <li id="4"><a href="#">
+                <span class="icon"><i class="fa-solid fa-laptop-code"></i></span>
+                <span id="nav-project" class="text lang"><b>Projects</b></span>
+            </a></li>
+            <div class="indicator"></div>
+        </ul>
+    </nav>
 
 
 <script>
@@ -152,6 +165,7 @@
 const list = document.querySelectorAll("nav li");
 const nbXP = 3;
 let activeXP = 0;
+let lang = "en";
 
 function activeLink(){
     list.forEach((item) => {
@@ -203,6 +217,27 @@ document.getElementById("show-all").onclick = () => {
             i++;
         })
 };
+
+let nav = document.querySelector("nav");
+function position() {
+    nav.style.left = window.innerWidth/2 + window.pageXOffset - 200 + 'px';
+    nav.style.top = window.innerHeight + window.pageYOffset-75 + 'px';
+}
+
+window.onresize = position;
+window.onscroll = position;
+
+
+document.getElementById("pages").style.display = "none";
+document.getElementById("nav").style.display = "none";
+document.querySelectorAll(".langage").forEach((item) => {
+    item.addEventListener("click", ()=>{
+        lang=this.id;
+        document.getElementById("choose-lang").style.display = "none";
+        document.getElementById("pages").style.display = "flex";
+        document.getElementById("nav").style.display = "flex";
+    })
+});
 
 </script>
 
