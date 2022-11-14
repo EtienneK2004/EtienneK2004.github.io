@@ -29,6 +29,21 @@ body{
     align-items: center;
 }
 
+
+#choose-lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+img#en{
+    margin-top: 100px;
+}
+
+
+
+
 /* NAVBARD */
 
 
@@ -85,7 +100,7 @@ nav ul li.active a .icon{
 
 nav ul li a .text{
     position: absolute;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 0.75em;
     transition: 0.5s;
     color: rgb(41, 40, 40);

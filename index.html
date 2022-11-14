@@ -13,15 +13,17 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="xp.css">
     <link rel="stylesheet" href="keyframes.css">
+    <script src="langage_db.js"></script>
 </head>
 <body>
 
     <div id="choose-lang">
-        <img class="langage" height="200" width="200" id="fr">
-        <h3>Bienvenue</h3>
-
-        <img class="langage" height="200" width="200" id="en">
-        <h3>Welcome</h3>
+        <!--ratio of 2:3-->
+        <img class="langage" src="images/Flag_of_France.svg" height="200" width="300" id="fr">
+        <h2>Bienvenue</h2>
+        <!--ratio of 10:19-->
+        <img class="langage" src="images/Flag_of_the_United_States.svg" height="157.9" width="300" id="en">
+        <h2>Welcome</h2>
     </div>
     
 
@@ -141,21 +143,22 @@
         <ul>
             <li id="1" class="active"><a href="#">
                 <span class="icon"><i class="fa-solid fa-house"></i></span>
-                <span id="nav-home" class="text lang"><b>Home</b></span></a>
+                <span id="nav-home" class="text lang">Home</span></a>
             </li>
             <li id="2"><a href="#">
                 <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
-                <span id="nav-experience" class="text lang"><b>Experience</b></span></a>
+                <span id="nav-experience" class="text lang">Experience</span></a>
             </li>
             <li id="3"><a href="#">
                 <span class="icon"><i class="fa-solid fa-music"></i></span>
-                <span id="nav-hobby" class="text lang"><b>Hobbys</b></span></a>
+                <span id="nav-hobby" class="text lang">Hobbys</span></a>
             </li>
             <li id="4"><a href="#">
                 <span class="icon"><i class="fa-solid fa-laptop-code"></i></span>
-                <span id="nav-project" class="text lang"><b>Projects</b></span>
+                <span id="nav-project" class="text lang">Projects</span>
             </a></li>
             <div class="indicator"></div>
+        
         </ul>
     </nav>
 
@@ -232,10 +235,16 @@ document.getElementById("pages").style.display = "none";
 document.getElementById("nav").style.display = "none";
 document.querySelectorAll(".langage").forEach((item) => {
     item.addEventListener("click", ()=>{
-        lang=this.id;
+        lang=item.id;
         document.getElementById("choose-lang").style.display = "none";
         document.getElementById("pages").style.display = "flex";
         document.getElementById("nav").style.display = "flex";
+        
+        Object.keys(db).forEach((key) => {
+            document.getElementById(key).innerText = db[key][lang];
+
+        });
+
     })
 });
 
