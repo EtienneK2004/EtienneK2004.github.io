@@ -50,3 +50,13 @@ db["nav-project"] = {
     en: "Projects",
     fr: "Projets"
 };
+
+db["title-who-am-i"] = {
+    en: "Who am I ?",
+    fr: "Qui suis-je ?"
+};
+
+db["p-who-am-i"] = {
+    en: "Hello, my name is Etienne Kita, 18 years old, second year CS student in IUT de Paris Cité - Rives de Seine. I've been passionate about math and music since elementary school, and computer science since high school where I learned python, and the basics of HTML and SQL. In my current 2 years in CS school I was able to acquire an advanced level in HTML/CSS/JS (also with JQuery), PL/SQL, C and Java as well as in database and OOP design.",
+    fr: "Bonjour, je suis Etienne Kita, 18 ans, étudiant en 2ème année de BUT Informatique à l'IUT Paris Cité - Rives de Seine. Je suis passionné par les mathématiques et la musique depuis la primaire, et l'informatique depuis le lycée où j'y ai appris le python, et les bases de l'HTML et du SQL. En BUT Informatique j'ai pu acquerrir un niveau avancé en HTML/CSS/JS (aussi avec JQuery), PL/SQL, C et Java ainsi qu'en conception de base de données et POO."
+};
