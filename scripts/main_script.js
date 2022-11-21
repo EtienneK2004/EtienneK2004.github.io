@@ -75,9 +75,8 @@ document.querySelectorAll(".langage").forEach((item) => {
         document.getElementById("nav").style.display = "flex";
         
         Object.keys(db).forEach((key) => {
-            document.getElementById(key).innerText = db[key][lang];
+            document.getElementById(key).innerHTML = db[key][lang];
 
         });
-
     })
 });
