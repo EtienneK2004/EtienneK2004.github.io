@@ -78,5 +78,6 @@ document.querySelectorAll(".langage").forEach((item) => {
             document.getElementById(key).innerHTML = db[key][lang];
 
         });
+        document.documentElement.lang = lang;
     })
 });
