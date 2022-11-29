@@ -188,6 +188,7 @@ nav ul li:nth-child(4).active ~ .indicator{
     justify-content: center;
     align-items: center;*/
     border: 1px solid var(--v);
+    padding-bottom: 100px; /*Space for nav*/
 }
 
 .second.page{
