@@ -52,7 +52,7 @@ db["nav-project"] = {
 };
 
 db["title-who-am-i"] = {
-    en: '<span class="green">Hello</span>, my name is Etienne Kita, et I am a <span class="green">second year CS student</span>',
+    en: '<span class="green">Hello</span>, my name is Etienne Kita, and I am a <span class="green">second year CS student</span>',
     fr: '<span class="green">Bonjour</span>, je suis Etienne Kita, et je suis <span class="green">étudiant de BUT Informatique</span>'
 };
 
@@ -69,4 +69,14 @@ db["sae-refonte-site"] = {
 db["sae-refonte-description"] = {
     en: "The goal of this project was to remake parts of an already existing website, I used this opportunity to discover the ExpressJs framework. The website is an 'admin vue'.",
     fr: "Le but de ce project était de refaire en partie un site déjà existant, j'ai profité de ce project pour découvrir le framework ExpressJs. Ce site est une 'vue admin'."
+}
+
+db["project-title"] = {
+    en: "Projects",
+    fr: "Projets"
+}
+
+db["hobby-title"] = {
+    en: "Hobbys",
+    fr: "Loisirs"
 }
