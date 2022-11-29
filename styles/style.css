@@ -51,7 +51,7 @@ img#en{
 nav{
     width: 400px;
     height: 75px;
-    position: absolute; /* Fake fixed with js */
+    position: absolute; 
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -178,6 +178,7 @@ nav ul li:nth-child(4).active ~ .indicator{
 .page{
     width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
     height: 100%;
     transition: 0.5s;
     position: absolute;

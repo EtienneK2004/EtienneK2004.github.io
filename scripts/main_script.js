@@ -55,14 +55,7 @@ document.getElementById("show-all").onclick = () => {
         })
 };
 
-let nav = document.querySelector("nav");
-function position() {
-    nav.style.left = window.innerWidth/2 + window.pageXOffset - 200 + 'px';
-    nav.style.top = window.innerHeight + window.pageYOffset-75 + 'px';
-}
 
-window.onresize = position;
-window.onscroll = position;
 
 
 document.getElementById("pages").style.display = "none";
