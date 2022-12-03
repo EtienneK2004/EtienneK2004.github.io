@@ -40,9 +40,17 @@ body{
 
 }
 
-#choose-lang div{
+#choose-lang div:nth-child(1){
     margin: 50px 100px;
+    animation: slide-from-left 0.4s ease-out 0s forwards;
 }
+
+#choose-lang div:nth-child(2){
+    margin: 50px 100px;
+    animation: slide-from-left 0.4s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
 
 
 #choose-lang h2{
@@ -50,6 +58,7 @@ body{
     color:whitesmoke;
     padding: 20px;
 }
+
 
 
 
@@ -68,6 +77,8 @@ nav{
     border-radius: 10px 10px 0 0;
     background: white;
     border-top: 6px solid var(--navb);
+    border-left: 3px solid var(--navb);
+    border-right: 3px solid var(--navb);
     border-bottom: 0;
 }
 
