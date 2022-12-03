@@ -37,7 +37,7 @@
     margin: 40px;
     color: whitesmoke;
     /* border: 4px solid var(--v); */
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 18px;
 }
 
@@ -46,7 +46,7 @@
 #home main h2 {
     text-align: center;
     font-size: 40px;
-    padding: 20px;
+    padding-top: 20px;
     z-index: 1;
     margin-bottom: 80px;
 }
