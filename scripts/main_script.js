@@ -66,7 +66,17 @@ document.querySelectorAll(".langage").forEach((item) => {
         document.getElementById("choose-lang").style.display = "none";
         document.getElementById("pages").style.display = "flex";
         document.getElementById("nav").style.display = "flex";
+        document.getElementById("switch-lang").style.display = "flex";
         
+        if(item.id == 'en'){
+            document.getElementById("switch-fr").style.display = 'flex';
+            document.getElementById("switch-en").style.display = 'none';
+        }
+        else{
+            document.getElementById("switch-en").style.display = 'flex';
+            document.getElementById("switch-fr").style.display = 'none';
+        }
+
         Object.keys(db).forEach((key) => {
             document.getElementById(key).innerHTML = db[key][lang];
 
@@ -74,3 +84,23 @@ document.querySelectorAll(".langage").forEach((item) => {
         document.documentElement.lang = lang;
     })
 });
+
+document.getElementById("switch-fr").addEventListener('click', ()=>{
+    Object.keys(db).forEach((key) => {
+        document.getElementById(key).innerHTML = db[key]['fr'];
+
+    });
+    document.getElementById("switch-en").style.display = 'flex';
+    document.getElementById("switch-fr").style.display = 'none';
+    document.documentElement.lang = 'fr';
+})
+
+document.getElementById("switch-en").addEventListener('click', ()=>{
+    Object.keys(db).forEach((key) => {
+        document.getElementById(key).innerHTML = db[key]['en'];
+
+    });
+    document.getElementById("switch-fr").style.display = 'flex';
+    document.getElementById("switch-en").style.display = 'none';
+    document.documentElement.lang = 'en';
+})

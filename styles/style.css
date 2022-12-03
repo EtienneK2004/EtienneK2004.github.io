@@ -60,6 +60,21 @@ body{
 }
 
 
+#switch-lang{
+    position: absolute;
+    display: none;
+    z-index: 40;
+    top: 20px;
+    left: 20px;
+    background-color: lightcyan;
+}
+
+#switch-lang button{
+    background-color: lightcyan;
+    border: 0;
+}
+
+
 
 
 
