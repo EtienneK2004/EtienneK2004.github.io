@@ -70,6 +70,8 @@ nav{
     width: 400px;
     height: 81px;
     position: absolute; 
+    margin: 0 auto;
+    transform: translateX(-8px);
     bottom: 0;
     display: flex;
     justify-content: center;
