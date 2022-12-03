@@ -10,6 +10,7 @@
     --v: rgb(87, 70, 240);
     --v2: rgb(130, 108, 255);
     --green: rgb(61, 201, 167);
+    --navb: rgb(62, 62, 100);
 }
 
 html{
@@ -33,13 +34,21 @@ body{
 
 #choose-lang {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: space-evenly;
 
 }
 
-img#en{
-    margin-top: 100px;
+#choose-lang div{
+    margin: 50px 100px;
+}
+
+
+#choose-lang h2{
+    text-align: center;
+    color:whitesmoke;
+    padding: 20px;
 }
 
 
@@ -58,7 +67,7 @@ nav{
     align-items: center;
     border-radius: 10px 10px 0 0;
     background: white;
-    border: 6px solid var(--clr);
+    border-top: 6px solid var(--navb);
     border-bottom: 0;
 }
 
@@ -123,7 +132,7 @@ nav ul li.active a .text{
     background: rgb(87, 70, 240);
     top:-40%;
     border-radius: 10px;
-    border: 6px solid var(--clr);
+    border: 6px solid var(--navb);
     transition: 0.5s;
 }
 /*

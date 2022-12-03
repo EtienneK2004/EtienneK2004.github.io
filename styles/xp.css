@@ -47,8 +47,8 @@
 }
 
 #experience article.purple{
-    background-color: var(--v);
-    color: black;
+    background-color: rgb(36, 26, 128);
+    color: lightgray;
 }
 
 .articles-container{
@@ -70,26 +70,6 @@
     font-size: 35px;
 }
 
-
-#experience .button {
-    position: absolute;
-    left: 55%;
-    font-size: 60px;
-    opacity: 0.6;
-    color: var(--v);
-}
-
-.fa-chevron-up{
-    top: 30px;
-}
-
-.fa-chevron-down{
-    bottom: 100px;
-}
-
-#experience .button:hover{
-    opacity: 1;
-}
 
 
 

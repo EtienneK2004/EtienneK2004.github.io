@@ -23,11 +23,16 @@
 
     <div id="choose-lang">
         <!--ratio of 2:3-->
-        <img class="langage" src="images/Flag_of_France.svg" height="200" width="300" id="fr">
-        <h2>Bienvenue</h2>
+        <div id="fr" class="langage">
+            <img src="images/Flag_of_France.svg" height="200" width="300" >
+            <h2>Bienvenue</h2>
+        </div>
         <!--ratio of 10:19-->
-        <img class="langage" src="images/Flag_of_the_United_States.svg" height="157.9" width="300" id="en">
-        <h2>Welcome</h2>
+        <div id="en" class="langage">
+            <img src="images/Flag_of_the_United_States.svg" height="157.9" width="300" >
+            <h2>Welcome</h2>
+        </div>
+        
     </div>
 
 
@@ -105,9 +110,33 @@
 
             </main>
 
+            <div class="skill-bar-container">
+                <div class="skill-box">
+                    <span class="skill-title">Java</span>
+                    <div class="skill-bar" style="width: 80%;"><span class="skill-per"><span class="tooltip">80%</span></span></div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-title">HTML/CSS</span>
+                    <div class="skill-bar" style="width: 60%;"><span class="skill-per"><span class="tooltip">60%</span></span></div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-title">Javascript</span>
+                    <div class="skill-bar" style="width: 70%;"><span class="skill-per"><span class="tooltip">70%</span></span></div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-title">PL/SQL</span>
+                    <div class="skill-bar" style="width: 55%;"><span class="skill-per"><span class="tooltip">55%</span></span></div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-title">Python</span>
+                    <div class="skill-bar" style="width: 85%;"><span class="skill-per"><span class="tooltip">85%</span></span></div>
+                </div>
+
+            </div>
+
         </div>
 
-        <div id="experience" class="second page">
+        <div id="experience" class="third page">
             <h1 id="title-experience" class="lang page-title">Experience</h1>
 
 
@@ -131,7 +160,7 @@
                     </ul>
                 </article>
 
-                <article class="purple">
+                <article class="grey">
                     <h2 class="lang" id="title-stage1">AirFrance Internship 1</h2>
                     <ul>
                         <li class="lang" id="p1-stage1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
@@ -157,12 +186,12 @@
 
         </div>
 
-        <div id="hobby" class="third page">
+        <div id="hobby" class="fourth page">
             <h1 id="hobby-title" class="lang page-title">Hobbys</h1>
             <h2 class="lang"></h2>
         </div>
 
-        <div id="project" class="fourth page">
+        <div id="project" class="second page">
             <h1 id="project-title" class="lang page-title">Projects</h1>
             <div class="project-list">
                 <div class="project-block">
@@ -227,17 +256,20 @@
                     <span id="nav-home" class="text lang">Home</span></a>
             </li>
             <li id="2"><a href="#">
+                <span class="icon"><i class="fa-solid fa-laptop-code"></i></span>
+                <span id="nav-project" class="text lang">Projects</span>
+            </a></li>
+            
+            
+            
+                <li id="3"><a href="#">
                     <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
                     <span id="nav-experience" class="text lang">Experience</span></a>
             </li>
-            <li id="3"><a href="#">
-                    <span class="icon"><i class="fa-solid fa-music"></i></span>
-                    <span id="nav-hobby" class="text lang">Hobbys</span></a>
-            </li>
             <li id="4"><a href="#">
-                    <span class="icon"><i class="fa-solid fa-laptop-code"></i></span>
-                    <span id="nav-project" class="text lang">Projects</span>
-                </a></li>
+                <span class="icon"><i class="fa-solid fa-music"></i></span>
+                <span id="nav-hobby" class="text lang">Hobbys</span></a>
+        </li>
             <div class="indicator"></div>
 
         </ul>

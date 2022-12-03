@@ -1,8 +1,14 @@
 #home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+}
+
+@media screen and (min-width: 860px) {
+    #home {
+        flex-direction: row;
+    }
 }
 
 #home h1{
@@ -50,6 +56,64 @@
     z-index: 1;
     text-align: center;
 }
+
+
+
+
+.skill-bar-container {
+    position: relative;
+    max-width: 500px;
+    min-width: 350px;
+    margin: 20px;
+    background-color: lightcyan;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.skill-box{
+    width: 100%;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.skill-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color:black;
+
+}
+
+.skill-bar {
+    height: 8px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
+    margin-top: 6px;
+}
+
+.skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--v);
+    border-radius: 6px;
+    animation: progress 0.4s ease-out forwards;
+}
+
+.tooltip{
+    position: absolute;
+    right: -14px;
+    background: var(--v);
+    top:-7px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: whitesmoke;
+    z-index: 3;
+}
+
 
 
 @media screen and (min-width: 769px) {
