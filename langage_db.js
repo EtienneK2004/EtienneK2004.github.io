@@ -5,8 +5,8 @@ db["title-experience"] = {
 };
 
 db["title-stage2"] = {
-    en: "Second AirFrance Internship",
-    fr: "Deuxième stage à AirFrance"
+    en: "Second Air France Internship",
+    fr: "Deuxième stage à Air France"
 };
 
 db["p1-stage2"] = {
@@ -15,17 +15,17 @@ db["p1-stage2"] = {
 };
 
 db["p2-stage2"] = {
-    en: "Carried out within a team of developers working on the backend of AirFrance's website, more specifically handeling requests for options on a flight and travel agencies.",
+    en: "Carried out within a team of developers working on the back end of Air France's website, more specifically handling requests for options on a flight and travel agencies.",
     fr: "Stage effectué au sein d'une équipe de développeurs travaillant sur le backend du site internet d'AirFrance, plus spécifiquement la gestion de requêtes des agences de voyages et les options de vol."
 };
 
 db["p3-stage2"] = {
-    en: "Learned about: Requests handeling, SCRUM methodology, test cases and server performances.",
+    en: "Learned about: Requests handling, SCRUM methodology, test cases and server performances.",
     fr: "Compétences acquises: Gestion de requêtes, méthodologie SCRUM, cas de tests et performances de serveur."
 };
 db["p4-stage2"] = {
-    en: "Could visit: The developers' premises and control room of AirFrance's servers.",
-    fr: "J'ai pu visiter: Les locaux des devs et la salle de contrôle des serveurs AirFrance."
+    en: "Could visit: The developers' premises and control room of Air France's servers.",
+    fr: "J'ai pu visiter: Les locaux des devs et la salle de contrôle des serveurs Air France."
 };
 
 
@@ -52,8 +52,8 @@ db["nav-project"] = {
 };
 
 db["title-who-am-i"] = {
-    en: '<span class="green">Hello</span>, my name is Etienne Kita, and I am a <span class="green">second year CS student</span>',
-    fr: '<span class="green">Bonjour</span>, je suis Etienne Kita, et je suis <span class="green">étudiant de BUT Informatique</span>'
+    en: '<span class="green">Hello</span>, my name is Etienne Kita, and I am a <span class="green">second year CS student</span> at IUT Paris Descartes.',
+    fr: '<span class="green">Bonjour</span>, je suis Etienne Kita, et je suis étudiant en BUT Informatique à <span class="green">l\'IUT Paris Descartes.</span>'
 };
 
 db["p-who-am-i"] = {

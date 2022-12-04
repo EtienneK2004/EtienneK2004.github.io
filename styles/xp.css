@@ -61,8 +61,8 @@
     width: 100%;
 }
 
-.articles-container article:last-child {
-    padding-bottom: 160px;
+.articles-container{
+    padding-bottom: 100px;
 }
 
 #experience h2{
