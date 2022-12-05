@@ -18,7 +18,11 @@
     background-color: lightcyan;
     border-radius: 15px;
     padding: 14px;
-    
+    transition: transform 0.5s ease-out 0.1s;
+}
+
+.project-block:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (min-width:1000px) {
