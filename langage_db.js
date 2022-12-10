@@ -1,4 +1,24 @@
 db = {};
+
+//-----------------NAV--------------------
+db["nav-home"] = {
+    en: "Home",
+    fr: "Accueil"
+};
+db["nav-experience"] = {
+    en: "Experience",
+    fr: "Expérience"
+};
+db["nav-hobby"] = {
+    en: "Hobbys",
+    fr: "Loisirs"
+};
+db["nav-project"] = {
+    en: "Projects",
+    fr: "Projets"
+};
+
+//------------------EXPERIENCE-------------------
 db["title-experience"] = {
     en: "Experience",
     fr: "Expérience"
@@ -34,23 +54,8 @@ db["title-stage1"] = {
     fr: "Premier stage à AirFrance"
 };
 
-db["nav-home"] = {
-    en: "Home",
-    fr: "Accueil"
-};
-db["nav-experience"] = {
-    en: "Experience",
-    fr: "Expérience"
-};
-db["nav-hobby"] = {
-    en: "Hobbys",
-    fr: "Loisirs"
-};
-db["nav-project"] = {
-    en: "Projects",
-    fr: "Projets"
-};
 
+//---------------------------HOME----------------------
 db["title-who-am-i"] = {
     en: '<span class="green">Hello</span>, my name is Etienne Kita, and I am a <span class="green">second year CS student</span> at IUT Paris Descartes.',
     fr: '<span class="green">Bonjour</span>, je suis Etienne Kita, et je suis étudiant en BUT Informatique à <span class="green">l\'IUT Paris Descartes.</span>'
@@ -61,21 +66,39 @@ db["p-who-am-i"] = {
     fr: "Je suis passionné par les mathématiques et la musique depuis la primaire, et l'informatique depuis le lycée."
 };
 
+
+
+
+//----------------------------PROJECTS-------------------------
+db["project-title"] = {
+    en: "Projects",
+    fr: "Projets"
+}
+
 db["sae-refonte-site"] = {
     en: "Website Redesign",
     fr: "Refonte de site"
 }
 
 db["sae-refonte-description"] = {
-    en: "The goal of this project was to remake parts of an already existing website, I used this opportunity to discover the ExpressJs framework. The website is an 'admin vue'.",
-    fr: "Le but de ce project était de refaire en partie un site déjà existant, j'ai profité de ce project pour découvrir le framework ExpressJs. Ce site est une 'vue admin'."
+    en: "I worked with 3 classmates to remake parts of an already existing website, I used this opportunity to discover the ExpressJs framework. The website is an 'admin vue'.",
+    fr: "J'ai travaillé avec 3 camarades pour refaire en partie un site déjà existant, j'ai profité de ce project pour découvrir le framework ExpressJs. Ce site est une 'vue admin'."
 }
 
-db["project-title"] = {
-    en: "Projects",
-    fr: "Projets"
+db["graphes"] = {
+    en: "Graphs implemetation",
+    fr: "Implémentation de graphes"
 }
 
+db["graphes-description"] = {
+    en: "This project implements graphs and can execute the Dijkstra and Bellman Ford algorithms following the SOLID principles. It's was done with the help of 2 others classmates",
+    fr: "Ce projet implémente des graphes en suivant les principes SOLID. IL peut exécuter les algorithmes de Dijkstra et Bellman Ford. Il a été réalisé avec 2 camarades."
+}
+
+
+
+
+//------------------------------HOBBYS-------------------------
 db["hobby-title"] = {
     en: "Hobbys",
     fr: "Loisirs"
