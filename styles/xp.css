@@ -46,6 +46,17 @@
     color: lightgray;
 }
 
+#experience article.left {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#experience article.right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
 #experience article.purple{
     background-color: rgb(36, 26, 128);
     color: lightgray;

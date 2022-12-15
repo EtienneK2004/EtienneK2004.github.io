@@ -25,8 +25,8 @@ db["title-experience"] = {
 };
 
 db["title-stage2"] = {
-    en: "Second Air France Internship",
-    fr: "Deuxième stage à Air France"
+    en: "Air France Internship",
+    fr: "Stage à Air France"
 };
 
 db["p1-stage2"] = {
@@ -49,10 +49,36 @@ db["p4-stage2"] = {
 };
 
 
-db["title-stage1"] = {
-    en: "AirFrance Internship 1",
-    fr: "Premier stage à AirFrance"
+
+
+
+db["p1-ndi22"] = {
+    en: "Date: December, 1st and 2nd 2022",
+    fr: "Date: 1er et 2 decembre 2022"
 };
+
+db["p2-ndi22"] = {
+    en: "Nuit de l'Info is an annual hackathon event organized by a group of French engineering schools. The goal is to create a website in one night following a theme. 2022's theme was HIV prevention. Multiple companies offer bonus challenges and rewards.",
+    fr: "La Nuit de l'Info est un hackathon annuel organisé par un groupe d'écoles d'ingénieurs françaises. L'objectif est de créer un site web en une nuit en suivant un thème. Le thème de 2022 était la prévention du VIH. Plusieurs entreprises proposent des défis et des récompenses en prime."
+};
+
+db["p3-ndi22"] = {
+    en: "This year I was part of the team LopotiCode and we won the first prize of Viveris' challenge: \"Submit me if you can !\". Where the challenge was to create a simple and intuitive form with an original way to guide the user and make it impossible to click the submit button until the form is fully completed.",
+    fr: "Cette année, je faisais partie de l'équipe LopotiCode et nous avons remporté le premier prix du challenge de Viveris : \"Submit me if you can !\". Le défi consistait à créer un formulaire simple et intuitif avec une manière originale de guider l'utilisateur et de faire en sorte qu'il soit impossible de cliquer sur le bouton d'envoi tant que le formulaire n'est pas entièrement rempli."
+};
+db["p4-ndi22"] = {
+    en: "We used the framework Vue.Js for our website, I had to partly learned it on the spot which wasn't the best idea.",
+    fr: "Nous avons utilisé le framework Vue.Js pour notre site web, j'ai dû l'apprendre en partie sur place, ce qui n'était pas la meilleure idée."
+};
+
+
+
+
+
+// db["title-stage1"] = {
+//     en: "AirFrance Internship 1",
+//     fr: "Premier stage d'observation à AirFrance"
+// };
 
 
 //---------------------------HOME----------------------
