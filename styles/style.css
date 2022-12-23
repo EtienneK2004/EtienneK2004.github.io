@@ -215,7 +215,22 @@ nav ul li:nth-child(4).active ~ .indicator{
     height: 100%;
     overflow: hidden;
     display: none;
+    transition: 0.5s;
 }
+
+.page.active{
+    scale: 1;
+    opacity: 1;
+}
+
+.page.beforeactive{
+    transform: translate(-100%);
+}
+
+.page.afteractive{
+    transform: translate(100%);
+}
+
 
 .page{
     width: 100%;
@@ -231,6 +246,8 @@ nav ul li:nth-child(4).active ~ .indicator{
     align-items: center;*/
     border: 1px solid var(--v);
     padding-bottom: 100px; /*Space for nav*/
+    scale: 0.2;
+    opacity: 0;
 }
 
 .page-title {
@@ -243,15 +260,15 @@ nav ul li:nth-child(4).active ~ .indicator{
     margin-bottom: 60px;
 }
 
-.second.page{
-    right: -100%;
+/* .second.page{
+    right: -100vw;
 }
 .third.page{
-    right: -200%;
+    right: -100vw;
 }
 .fourth.page{
-    right: -300%;
-}
+    right: -100vw;
+} */
 
 
 

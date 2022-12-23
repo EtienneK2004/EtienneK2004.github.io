@@ -1,22 +1,61 @@
 
-const list = document.querySelectorAll("nav li");
+const navlist = document.querySelectorAll("nav li");
+const pagelist = document.querySelectorAll(".pages>div");
 const nbXP = 3;
 let activeXP = 0;
 let lang = "en";
 
 function activeLink(){
-    list.forEach((item) => {
+    
+    navlist.forEach((item) => {
         item.classList.remove("active");
-    })
+    });
     this.classList.add("active");
-    document.querySelectorAll(".page").forEach((item) =>{
-        if(this.id==1) item.style.transform = `translateX(0)`;
-        else item.style.transform = `translateX(-${this.id-1}00%)`;
-    })
+    // document.querySelectorAll(".page").forEach((item) =>{
+    //     if(this.id==1) item.style.transform = `translateX(0)`;
+    //     else item.style.transform = `translateX(-${(this.id-1)*100}%)`;
+    // })
 
+    changePage(this.id);
 }
 
-list.forEach((item) => {
+function changePage(num){
+    before = true;
+    cpt = 1;
+    pagelist.forEach((item) => {
+        item.classList.remove("beforeactive");
+        item.classList.remove("afteractive");
+        if(cpt==num){
+            before=false;
+            console.log(num);
+        }
+        else{
+            console.log(num + before);
+            item.classList.remove("active");
+            item.classList.add(before?"beforeactive":"afteractive");
+        }
+        cpt++;
+    })
+    switch (num) {
+        case "1":
+            document.querySelector(".first").classList.add("active");
+            break;
+        case "2":
+            document.querySelector(".second").classList.add("active");
+            break;
+        case "3":
+            document.querySelector(".third").classList.add("active");
+            break;
+        case "4":
+            document.querySelector(".fourth").classList.add("active");
+            break;
+    
+        default:
+            break;
+    }
+}
+
+navlist.forEach((item) => {
     item.addEventListener("click", activeLink);
 });
 
