@@ -5,6 +5,8 @@ const nbXP = 3;
 let activeXP = 0;
 let lang = "en";
 
+
+
 function changeLink(num){
     navlist.forEach((item) => {
         item.classList.remove("active");
@@ -25,16 +27,14 @@ function changePage(num){
         item.classList.remove("afteractive");
         if(cpt==num){
             before=false;
-            console.log(num);
         }
         else{
-            console.log(num + before);
             item.classList.remove("active");
             item.classList.add(before?"beforeactive":"afteractive");
         }
         cpt++;
     })
-    switch (num) {
+    switch (num+"") {
         case "1":
             document.querySelector(".first").classList.add("active");
             break;
@@ -119,9 +119,22 @@ document.querySelectorAll(".langage").forEach((item) => {
 
         });
         document.documentElement.lang = lang;
-
-        changeLink(1);
-        changePage(1);
+        let s = document.URL.split('#');
+        
+        if(s[1]){
+            let numPage = {
+                'home': 1,
+                'projects': 2,
+                'experience': 3,
+                'hobbys': 4,
+            }
+            changePage(numPage[s[1]]);
+            changeLink(numPage[s[1]]);
+        }
+        else{
+            changeLink(1);
+            changePage(1);
+        }
 
     })
 });

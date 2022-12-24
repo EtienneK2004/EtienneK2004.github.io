@@ -1,5 +1,5 @@
 
-#experience h1{
+#xp h1{
     background-color: var(--v2);
     position: sticky;
     top: 0;
@@ -8,12 +8,12 @@
     z-index: 3;
 }
 
-#experience {
+#xp {
     display: block;
 }
 
 /* @media screen and (min-width: 800px){
-    #experience h1{
+    #xp h1{
         left: 0;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
@@ -23,7 +23,7 @@
     }
 } */
 
-#experience article{
+#xp article{
     position: relative;
     min-height: 500px;
     padding: 30px;
@@ -32,32 +32,32 @@
     /* background-color: whitesmoke;  */
 }
 
-#experience article ul{
+#xp article ul{
     max-width: 400px;
     margin: 20px auto;
 }
 
-#experience ul li{
+#xp ul li{
     margin: 1em auto;
 }
 
-#experience article.grey {
+#xp article.grey {
     background-color: var(--clr);
     color: lightgray;
 }
 
-#experience article.left {
+#xp article.left {
     display: flex;
     justify-content: space-evenly;
 }
 
-#experience article.right {
+#xp article.right {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
 }
 
-#experience article.purple{
+#xp article.purple{
     background-color: rgb(36, 26, 128);
     color: lightgray;
 }
@@ -76,7 +76,7 @@
     padding-bottom: 100px;
 }
 
-#experience h2{
+#xp h2{
     text-align: center;
     font-size: 35px;
 }
