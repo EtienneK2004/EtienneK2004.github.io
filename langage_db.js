@@ -58,15 +58,19 @@ db["p1-ndi22"] = {
 };
 
 db["p2-ndi22"] = {
-    en: "Nuit de l'Info is an annual hackathon event organized by a group of French engineering schools. The goal is to create a website in one night following a theme. 2022's theme was HIV prevention. Multiple companies offer bonus challenges and rewards.",
-    fr: "La Nuit de l'Info est un hackathon annuel organisé par un groupe d'écoles d'ingénieurs françaises. L'objectif est de créer un site web en une nuit en suivant un thème. Le thème de 2022 était la prévention du VIH. Plusieurs entreprises proposent des défis et des récompenses en prime."
+    en: "Nuit de l'Info is an annual hackathon event organized by a group of French engineering schools. The goal is to create a website in one night following a theme. 2022's theme was HIV prevention. Multiple companies offer bonus challenges and rewards. This year I was part of the team LopotiCode.",
+    fr: "La Nuit de l'Info est un hackathon annuel organisé par un groupe d'écoles d'ingénieurs françaises. L'objectif est de créer un site web en une nuit en suivant un thème. Le thème de 2022 était la prévention du VIH. Plusieurs entreprises proposent des défis et des récompenses en prime. Cette année, je faisais partie de l'équipe LopotiCode"
 };
 
 db["p3-ndi22"] = {
-    en: "This year I was part of the team LopotiCode and we won the first prize of Viveris' challenge: \"Submit me if you can !\". Where the challenge was to create a simple and intuitive form with an original way to guide the user and make it impossible to click the submit button until the form is fully completed.",
-    fr: "Cette année, je faisais partie de l'équipe LopotiCode et nous avons remporté le premier prix du challenge de Viveris : \"Submit me if you can !\". Le défi consistait à créer un formulaire simple et intuitif avec une manière originale de guider l'utilisateur et de faire en sorte qu'il soit impossible de cliquer sur le bouton d'envoi tant que le formulaire n'est pas entièrement rempli."
+    en: "We won the <span class=\"green\">first prize of Viveris' challenge</span>: \"Submit me if you can !\". Where the challenge was to create a simple and intuitive form with an original way to guide the user and make it impossible to click the submit button until the form is fully completed.",
+    fr: "Nous avons remporté la <span class=\"green\">première place du challenge de Viveris</span> : \"Submit me if you can !\". Le défi consistait à créer un formulaire simple et intuitif avec une manière originale de guider l'utilisateur et de faire en sorte qu'il soit impossible de cliquer sur le bouton d'envoi tant que le formulaire n'est pas entièrement rempli."
 };
 db["p4-ndi22"] = {
+    en: "We also won the <span class=\"green\">third prize of ASI Rennes' challenge</span>: \"A la conquête de <i>l’œuf de pâques</i>\". We had to make an easter egg; a kind of mini game that fits the theme of the website.",
+    fr: "Nous avons également remporté le <span class=\"green\">troisième prix du challenge de l'ASI Rennes</span> : \"A la conquête de <i>l'œuf de pâques</i>\". Nous devions créer un œuf de pâques, pas trop complexe; une sorte de mini jeu qui suit le thème du site."
+};
+db["p5-ndi22"] = {
     en: "We used the framework Vue.Js for our website, I had to partly learned it on the spot which wasn't the best idea.",
     fr: "Nous avons utilisé le framework Vue.Js pour notre site web, j'ai dû l'apprendre en partie sur place, ce qui n'était pas la meilleure idée."
 };
@@ -117,8 +121,28 @@ db["graphes"] = {
 }
 
 db["graphes-description"] = {
-    en: "This project implements graphs and can execute the Dijkstra and Bellman Ford algorithms following the SOLID principles. It's was done with the help of 2 others classmates",
+    en: "This project implements graphs and can execute the Dijkstra and Bellman Ford algorithms following the SOLID principles. It was done with the help of 2 others classmates.",
     fr: "Ce projet implémente des graphes en suivant les principes SOLID. IL peut exécuter les algorithmes de Dijkstra et Bellman Ford. Il a été réalisé avec 2 camarades."
+}
+
+db["hex"] = {
+    en: "Game of Hex",
+    fr: "Jeu du Hex"
+}
+
+db["hex-description"] = {
+    en: "A two players game on a 4 sided board with hexagonal cells following the SOLID principles. It has a console interface and computer-generated moves. It was done with 3 others classmates.",
+    fr: "Un jeu de 2 joueurs sur un plateau à 4 cotés et des cases hexagonales. Nous avons fait une interface console ainsi que des coups générés par ordinateur. Il a été réalisé en suivant les principes SOLID avec 3 camarades."
+}
+
+db["portfolio"] = {
+    en: "Personnal portfolio",
+    fr: "Mon portfolio"
+}
+
+db["portfolio-description"] = {
+    en: "This exact website: in addition of giving informations about myself, it is slowly evolving as I learn or discover new things.",
+    fr: "Ce site: En plus de fournir des informations sur moi-même, il évolue au rythme de mon apprentissage et de mes découvertes."
 }
 
 

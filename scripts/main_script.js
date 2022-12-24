@@ -5,17 +5,15 @@ const nbXP = 3;
 let activeXP = 0;
 let lang = "en";
 
-function activeLink(){
-    
+function changeLink(num){
     navlist.forEach((item) => {
         item.classList.remove("active");
     });
-    this.classList.add("active");
-    // document.querySelectorAll(".page").forEach((item) =>{
-    //     if(this.id==1) item.style.transform = `translateX(0)`;
-    //     else item.style.transform = `translateX(-${(this.id-1)*100}%)`;
-    // })
+    document.getElementById(num).classList.add("active");
+}
 
+function activeLink(){
+    changeLink(this.id);
     changePage(this.id);
 }
 
@@ -121,6 +119,10 @@ document.querySelectorAll(".langage").forEach((item) => {
 
         });
         document.documentElement.lang = lang;
+
+        changeLink(1);
+        changePage(1);
+
     })
 });
 
