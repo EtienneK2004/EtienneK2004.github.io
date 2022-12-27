@@ -224,11 +224,12 @@ nav ul li:nth-child(4).active ~ .indicator{
 }
 
 .page.beforeactive{
-    transform: translate(-100%);
+    transform: translate(-125%);
 }
 
 .page.afteractive{
-    transform: translate(100%);
+    transform: translate(125%);
+    z-index: -1;
 }
 
 

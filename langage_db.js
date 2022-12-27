@@ -153,3 +153,8 @@ db["hobby-title"] = {
     en: "Hobbys",
     fr: "Loisirs"
 }
+
+db['first-hobby'] = {
+    en: "Under construction...",
+    fr: "En construction..."
+}
