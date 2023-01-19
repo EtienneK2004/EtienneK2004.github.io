@@ -32,6 +32,28 @@ body{
 }
 
 
+/*scroll*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(130, 108, 255); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 70, 240); 
+  }
+
+
 #choose-lang {
     display: flex;
     /* flex-direction: column; */
@@ -236,7 +258,7 @@ nav ul li:nth-child(4).active ~ .indicator{
 .page{
     width: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 100%;
     transition: 0.8s;
     position: absolute;
