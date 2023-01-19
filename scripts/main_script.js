@@ -76,36 +76,38 @@ function changeLanguage(oldL, newL){
     
 }
 
+function autoPageChange(){
+    let s = document.URL.split('#')[1].split('?')[0];
+        
+    if(s){
+        let numPage = {
+            'home': 1,
+            'projects': 2,
+            'experience': 3,
+            'hobbys': 4,
+        }
+        try{
+            changePage(numPage[s]);
+            changeLink(numPage[s]);
+        }catch(e){
+            changeLink(1);
+            changePage(1);
+        }
+    }
+    else{
+        changeLink(1);
+        changePage(1);
+    }
+}
+
 
 document.getElementById("pages").style.display = "none";
 document.getElementById("nav").style.display = "none";
 document.querySelectorAll(".langage").forEach((item) => {
     item.addEventListener("click", ()=>{
-
-        
-
-
         oldL = item.id=='en'?'fr':'en';
         changeLanguage(oldL, item.id);
-
-
-        let s = document.URL.split('#');
-        
-        if(s[1]){
-            let numPage = {
-                'home': 1,
-                'projects': 2,
-                'experience': 3,
-                'hobbys': 4,
-            }
-            changePage(numPage[s[1]]);
-            changeLink(numPage[s[1]]);
-        }
-        else{
-            changeLink(1);
-            changePage(1);
-        }
-
+        autoPageChange();
     })
 });
 
@@ -128,10 +130,8 @@ document.getElementById("switch-en").addEventListener('click', ()=>{
 function autoChangeLanguage(){
     if(document.URL.includes("etienne-kita.fr")){
         changeLanguage('en', 'fr');
-    }
-    else if (document.URL.includes("etienne-kita.com")){
-        changeLanguage('fr', 'en');
+        autoPageChange();
     }
 }
 
-window.onload = autoChangeLanguage;
+autoChangeLanguage();
