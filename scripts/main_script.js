@@ -57,40 +57,7 @@ navlist.forEach((item) => {
     item.addEventListener("click", activeLink);
 });
 
-document.querySelectorAll(".lettre").forEach((item) => {
-    
-    item.addEventListener("click", () => {
-        if(item.classList.contains("fixed")){
-            item.classList.remove("fixed");
-            item.querySelectorAll(".part").forEach((part) => {
-                part.classList.remove("fixed");
-            });
-        }
-        else{
-            item.classList.add("fixed");
-            item.querySelectorAll(".part").forEach((part) => {
-                part.classList.add("fixed");
-            });
-        }
-        
-    })
-});
 
-
-
-document.getElementById("show-all").onclick = () => {
-    let i = 0;
-    document.querySelectorAll(".lettre").forEach((lettre) => {
-            if(lettre.classList.contains("fixed")) return;
-            setTimeout(()=>{
-                lettre.classList.add("fixed");
-                lettre.querySelectorAll(".part").forEach((part) => {
-                    part.classList.add("fixed");
-                });
-            }, 50*i);
-            i++;
-        })
-};
 
 
 

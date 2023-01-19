@@ -62,12 +62,21 @@
 
 .skill-bar-container {
     position: relative;
-    max-width: 500px;
-    min-width: 350px;
+    max-width: 350px;
+    min-width: 300px;
+    
     margin: 20px;
     background-color: lightcyan;
     border-radius: 10px;
     padding: 15px;
+}
+
+.skill-bar-container img {
+    
+    max-width: 100%;
+    max-height: 100%;
+    display: block; 
+    
 }
 
 .skill-box{
