@@ -59,33 +59,36 @@ navlist.forEach((item) => {
 
 
 
+function changeLanguage(oldL, newL){
+    document.getElementById("choose-lang").style.display = "none";
+        document.getElementById("pages").style.display = "flex";
+        document.getElementById("nav").style.display = "flex";
+        document.getElementById("switch-lang").style.display = "flex";
+    
+    document.getElementById("switch-"+oldL).style.display = 'flex';
+    document.getElementById("switch-"+newL).style.display = 'none';
 
+    Object.keys(db).forEach((key) => {
+        document.getElementById(key).innerHTML = db[key][newL];
+
+    });
+    document.documentElement.lang = newL;
+    
+}
 
 
 document.getElementById("pages").style.display = "none";
 document.getElementById("nav").style.display = "none";
 document.querySelectorAll(".langage").forEach((item) => {
     item.addEventListener("click", ()=>{
-        lang=item.id;
-        document.getElementById("choose-lang").style.display = "none";
-        document.getElementById("pages").style.display = "flex";
-        document.getElementById("nav").style.display = "flex";
-        document.getElementById("switch-lang").style.display = "flex";
+
         
-        if(item.id == 'en'){
-            document.getElementById("switch-fr").style.display = 'flex';
-            document.getElementById("switch-en").style.display = 'none';
-        }
-        else{
-            document.getElementById("switch-en").style.display = 'flex';
-            document.getElementById("switch-fr").style.display = 'none';
-        }
 
-        Object.keys(db).forEach((key) => {
-            document.getElementById(key).innerHTML = db[key][lang];
 
-        });
-        document.documentElement.lang = lang;
+        oldL = item.id=='en'?'fr':'en';
+        changeLanguage(oldL, item.id);
+
+
         let s = document.URL.split('#');
         
         if(s[1]){
@@ -106,22 +109,29 @@ document.querySelectorAll(".langage").forEach((item) => {
     })
 });
 
-document.getElementById("switch-fr").addEventListener('click', ()=>{
-    Object.keys(db).forEach((key) => {
-        document.getElementById(key).innerHTML = db[key]['fr'];
 
-    });
-    document.getElementById("switch-en").style.display = 'flex';
-    document.getElementById("switch-fr").style.display = 'none';
-    document.documentElement.lang = 'fr';
+
+document.getElementById("switch-fr").addEventListener('click', ()=>{
+    changeLanguage('en', 'fr');
 })
+
 
 document.getElementById("switch-en").addEventListener('click', ()=>{
-    Object.keys(db).forEach((key) => {
-        document.getElementById(key).innerHTML = db[key]['en'];
-
-    });
-    document.getElementById("switch-fr").style.display = 'flex';
-    document.getElementById("switch-en").style.display = 'none';
-    document.documentElement.lang = 'en';
+    changeLanguage('fr', 'en');
 })
+
+
+
+
+
+
+function autoChangeLanguage(){
+    if(document.URL.includes("etienne-kita.fr")){
+        changeLanguage('en', 'fr');
+    }
+    else if (document.URL.includes("etienne-kita.com")){
+        changeLanguage('fr', 'en');
+    }
+}
+
+window.onload = autoChangeLanguage;
