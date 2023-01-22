@@ -1,5 +1,5 @@
 
-const navlist = document.querySelectorAll("nav li");
+const navlist = document.querySelectorAll(".inside-nav>.nav-elem");
 const pagelist = document.querySelectorAll(".pages>div");
 const nbXP = 3;
 let activeXP = 0;
