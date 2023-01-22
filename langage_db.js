@@ -96,6 +96,11 @@ db["p-who-am-i"] = {
     fr: "Je suis passionné par les mathématiques et la musique depuis la primaire, et l'informatique depuis le lycée."
 };
 
+db["p-who-am-i-2"] = {
+    en: "Now, I like software, back-end and video games development and I am looking for an internship possibly in one of these fields.",
+    fr: "Aujourd'hui, je suis intéressé par le développement logiciel, back-end et de jeux-vidéos et je recherche un stage possiblement dans l'un de ces domaines."
+};
+
 
 
 
