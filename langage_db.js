@@ -71,8 +71,8 @@ db["p4-ndi22"] = {
     fr: "Nous avons également remporté le <span class=\"green\">troisième prix du challenge de l'ASI Rennes</span> : \"A la conquête de <i>l'œuf de pâques</i>\". Nous devions créer un œuf de pâques, pas trop complexe; une sorte de mini jeu qui suit le thème du site."
 };
 db["p5-ndi22"] = {
-    en: "We used the framework Vue.Js for our website, I had to partly learned it on the spot which wasn't the best idea.",
-    fr: "Nous avons utilisé le framework Vue.Js pour notre site web, j'ai dû l'apprendre en partie sur place, ce qui n'était pas la meilleure idée."
+    en: "We used the framework Vue.Js for our website, I had to partly learned it on the spot.",
+    fr: "Nous avons utilisé le framework Vue.Js pour notre site web, j'ai dû l'apprendre en partie sur place."
 };
 
 
@@ -148,6 +148,16 @@ db["portfolio"] = {
 db["portfolio-description"] = {
     en: "This exact website: in addition of giving informations about myself, it is slowly evolving as I learn or discover new things.",
     fr: "Ce site: En plus de fournir des informations sur moi-même, il évolue au rythme de mon apprentissage et de mes découvertes."
+}
+
+db["tm-envi-generator"] = {
+    en: "Trackmania Environnement Generator",
+    fr: "Générateur de terrain pour Trackmania"
+}
+
+db["tm-envi-generator-description"] = {
+    en: "In collaboration with another member of Trackmania's community, we used Perlin noise generation in a plugin in order to generate a base terrain for any map.",
+    fr: "EN duo avec un autre membre de la communauté de Trackmania, nous avons crée un plugin qui génére un terrain de base grâce à l'algorithme du bruit de Perlin."
 }
 
 
