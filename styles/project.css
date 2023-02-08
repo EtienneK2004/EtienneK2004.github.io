@@ -62,3 +62,7 @@
     background-color: rgb(219, 208, 236);
     border-radius: 2px;
 }
+
+.project-tags span.green-tag {
+    background-color: rgb(174, 230, 174);
+}

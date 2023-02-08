@@ -150,6 +150,16 @@ db["portfolio-description"] = {
     fr: "Ce site: En plus de fournir des informations sur moi-même, il évolue au rythme de mon apprentissage et de mes découvertes."
 }
 
+db["chat-java"] = {
+    en: "Chat between Java consoles",
+    fr: "Tchat entre consoles Java"
+}
+
+db["chat-java-description"] = {
+    en: "Application of newly learned concepts: sockets, threads and concurrency. A simple system of chat between consoles with via a local server.",
+    fr: "Un système de tchat entre consoles Java via un serveur local pour appliquer mes récits les plus récents en Java: sockets et programmation concurrente."
+}
+
 db["tm-envi-generator"] = {
     en: "Trackmania Environnement Generator",
     fr: "Générateur de terrain pour Trackmania"
@@ -157,7 +167,7 @@ db["tm-envi-generator"] = {
 
 db["tm-envi-generator-description"] = {
     en: "In collaboration with another member of Trackmania's community, we used Perlin noise generation in a plugin in order to generate a base terrain for any map.",
-    fr: "EN duo avec un autre membre de la communauté de Trackmania, nous avons crée un plugin qui génére un terrain de base grâce à l'algorithme du bruit de Perlin."
+    fr: "En duo avec un autre membre de la communauté de Trackmania, nous avons crée un plugin qui génére un terrain de base grâce à l'algorithme du bruit de Perlin."
 }
 
 
