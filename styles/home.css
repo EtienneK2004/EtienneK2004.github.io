@@ -8,6 +8,7 @@
 @media screen and (min-width: 860px) {
     #home {
         flex-direction: row;
+        justify-content: center;
     }
 }
 
