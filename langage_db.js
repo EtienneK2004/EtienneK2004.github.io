@@ -24,6 +24,31 @@ db["title-experience"] = {
     fr: "Expérience"
 };
 
+db["title-stage3"] = {
+    en: "LIVNA internship",
+    fr: "Stage chez LIVNA"
+};
+
+db["p1-stage3"] = {
+    en: "Date: April - July 2023",
+    fr: "Date: Avril - Juillet 2023"
+};
+
+db["p2-stage3"] = {
+    fr: "Livna est une startup qui propose un site de cashback en Bitcoin. Ma mission était de développer, seul, puis en duo, le dashboard du site.",
+    en: "Livna is a startup that offers a cashback website in Bitcoin. My mission was to develop, alone, then in duo, the website's dashboard."
+};
+
+db["p3-stage3"] = {
+    fr: "Apprentissage du framework NestJS avec TypeScript pour développer de nouvelles fonctionnalités dans le back-end. En addition de nouvelles pages en ReactJS/CSS",
+    en: "I learned the NestJS framework with TypeScript to develop new features in the back-end. In addition to new pages in ReactJS/CSS."
+};
+
+db["p4-stage3"] = {
+    fr: "Participation active à la conception du produit de la startup en collaboration avec le fondateur et le designer.",
+    en: "Active participation in the design of the startup's product in collaboration with the founder and the designer."
+};
+
 db["title-stage2"] = {
     en: "Air France Internship",
     fr: "Stage à Air France"
@@ -79,10 +104,6 @@ db["p5-ndi22"] = {
 
 
 
-// db["title-stage1"] = {
-//     en: "AirFrance Internship 1",
-//     fr: "Premier stage d'observation à AirFrance"
-// };
 
 
 //---------------------------HOME----------------------
@@ -108,6 +129,11 @@ db["p-who-am-i-2"] = {
 db["project-title"] = {
     en: "Projects",
     fr: "Projets"
+}
+
+db["linkzik-description"] = {
+    fr: "Projet universitaire en groupe, un réseau social pour aider les musiciens français à former des groupes.",
+    en: "University project in a group, a social network to help French musicians to form bands."
 }
 
 db["sae-refonte-site"] = {
